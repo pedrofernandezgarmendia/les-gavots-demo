@@ -1319,7 +1319,7 @@ footer {
       </div>
 
       <div class="reveal reveal-delay-2">
-        <form class="form-reserva" onsubmit="handleSubmit(event)">
+        <form class="form-reserva" action="https://formspree.io/f/xreyyqgv" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Nombre</label>
@@ -1515,17 +1515,7 @@ buildField('atmoField',    160, 55, 22, true);
 })();
 
 // FORM
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
-  btn.textContent = 'Solicitud enviada ✓';
-  btn.style.background = 'var(--sauge)';
-  setTimeout(() => {
-    btn.textContent = 'Solicitar reserva';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3500);
-}
+
 </script>
 </body>
 </html>
