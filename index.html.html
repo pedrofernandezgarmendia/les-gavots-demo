@@ -1323,20 +1323,20 @@ footer {
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Nombre</label>
-              <input type="text" placeholder="Tu nombre" required>
+              <input type="text" name="nombre" placeholder="Tu nombre" required>
             </div>
             <div class="form-group">
               <label class="form-label">Teléfono</label>
-              <input type="tel" placeholder="+34 654524291" required>
+              <input type="tel" name="telefono" placeholder="+34 654524291" required>
             </div>
           </div>
           <div class="form-group">
             <label class="form-label">Email</label>
-            <input type="email" placeholder="tu@email.com" required>
+            <input type="email" name="email" placeholder="tu@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">Tratamiento</label>
-            <select required>
+            <select name="tratamiento" required>
               <option value="" disabled selected>Selecciona un ritual</option>
               <option>Masaje Lavande Essentielle — 60 min · 75€</option>
               <option>Ritual Visage Provençal — 75 min · 90€</option>
@@ -1348,11 +1348,11 @@ footer {
           </div>
           <div class="form-group">
             <label class="form-label">Fecha preferida</label>
-            <input type="date" required>
+            <input type="date" name="fecha" required>
           </div>
           <div class="form-group">
             <label class="form-label">Mensaje (opcional)</label>
-            <textarea placeholder="Cuéntanos si tienes alguna preferencia, alergia o algo que debamos saber para personalizar tu ritual..."></textarea>
+            <textarea name="mensaje" placeholder="Cuéntanos si tienes alguna preferencia, alergia o algo que debamos saber para personalizar tu ritual..."></textarea>
           </div>
           <button type="submit" class="btn-submit">Solicitar reserva</button>
           <p class="form-nota">Confirmamos en menos de 24 horas por WhatsApp o email.</p>
